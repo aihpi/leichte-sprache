@@ -23,9 +23,7 @@ ls_ui = gr.Interface(
     title="KI-Prototyp: Leichte Sprache für die Verwaltung",
     description="Simplify Text with LLMs!",
     examples=[[p.EXAMPLE, DEFAULT_MODEL, False, 5, 0.9, 0.3]],
-    flagging_mode="manual",
-    flagging_dir=p.EXPORT_PATH,
-    flagging_options=[("Export", "export")],
+    flagging_mode="never",
     additional_inputs=[
         gr.Dropdown(
             choices=AVBL_LLM_CHOICES, value=DEFAULT_MODEL, label="Model", allow_custom_value=True
