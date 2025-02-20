@@ -4,7 +4,10 @@ __pycache__/
 
 # Virtual Environment
 myvenv/
+.myvenv/
 venv/
+.venv/
+.gradio/
 
 # Env variables file (for dotenv for example)
 .env
